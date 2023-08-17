@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="570sp"
+        android:background="@drawable/wave__1_"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/nama_profil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="20dp"
+            android:fontFamily="monospace"
+            android:text="MIE CAKEP"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#FFC107"
+            app:layout_constraintBottom_toTopOf="@+id/profil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/profil"
+            android:layout_width="280dp"
+            android:layout_height="170dp"
+            app:layout_constraintBottom_toBottomOf="@+id/nama_profil"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/email"
+            app:srcCompat="@drawable/profil" />
+
+        <Button
+            android:id="@+id/email"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            app:icon="@drawable/ic_baseline_email_24"
+            app:layout_constraintEnd_toStartOf="@+id/telepon"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profil" />
+
+        <Button
+            android:id="@+id/telepon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            app:icon="@drawable/ic_baseline_local_phone_24"
+            app:layout_constraintEnd_toStartOf="@+id/map"
+            app:layout_constraintStart_toEndOf="@+id/email"
+            app:layout_constraintTop_toBottomOf="@+id/profil" />
+
+        <Button
+            android:id="@+id/map"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp"
+            app:icon="@drawable/ic_baseline_map_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/telepon"
+            app:layout_constraintTop_toBottomOf="@+id/profil" />
+
+        <TextView
+            android:id="@+id/judul_deskripsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="120dp"
+            android:fontFamily="monospace"
+            android:text="Deskripsi :"
+            android:textColor="#FFC107"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/email" />
+
+        <TextView
+            android:id="@+id/deskripsi"
+            android:layout_width="363dp"
+            android:layout_height="282dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="monospace"
+            android:text="Selamat datang di Mie Cakep, destinasi kuliner yang mengajak Anda dalam perjalanan rasa melalui dunia mie yang beragam. Dari pinggiran kota hingga ke jantung kota, Mie Cakep hadir sebagai pelopor sajian mie dengan sentuhan kreatif dan cita rasa autentik. Nikmati kelezatan mie dalam berbagai variasi, dari pedas yang menggugah selera hingga manis yang memanjakan lidah, semuanya dengan bumbu-bumbu pilihan dan bahan berkualitas tinggi. Tidak hanya makanan, kami juga menyajikan minuman yang menyegarkan untuk melengkapi pengalaman makan Anda. Dengan suasana yang hangat dan penuh keramahan, Mie Cakep siap menyambut Anda dan menghadirkan kenikmatan sejati dalam setiap suapan."
+            android:textColor="#FFC107"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul_deskripsi" />
+
+        <TextView
+            android:id="@+id/judul_listmenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="120dp"
+            android:fontFamily="monospace"
+            android:text="List Menu :"
+            android:textColor="#FFC107"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deskripsi" />
+
+        <TextView
+            android:id="@+id/listmenu"
+            android:layout_width="365dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="monospace"
+            android:text="Makanan : Semua Menu Mie dapat request level \n\n•	Mie Cakep (Gurih) : Level 1-10\n•	Mie Ganteng (Manis) : Level 1-10\n•	Mie Keren (Manis Gurih) : Level 1-10\n•	Dimsum\n•	Kentang Goreng\n\nMinuman :\n\n•	Es Teh\n•	Es Jeruk\n•	Cappuccino"
+            android:textColor="#FFC107"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul_listmenu" />
+
+        <TextView
+            android:id="@+id/judul_alamat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="120dp"
+            android:fontFamily="monospace"
+            android:text="Alamat :"
+            android:textColor="#FFC107"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/listmenu" />
+
+        <TextView
+            android:id="@+id/alamat"
+            android:layout_width="369dp"
+            android:layout_height="85dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="monospace"
+            android:text="Jl. Imam Bonjol No.207, Pendrikan Kidul, Kec. Semarang Tengah, Kota Semarang, Jawa Tengah "
+            android:textColor="#FFC107"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul_alamat" />
+
+        <TextView
+            android:id="@+id/judul_jambuka"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="120dp"
+            android:fontFamily="monospace"
+            android:text="Jam Buka :"
+            android:textColor="#FFC107"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.121"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/alamat" />
+
+        <TextView
+            android:id="@+id/jambuka"
+            android:layout_width="368dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="monospace"
+            android:text="Week Day Jam 10.00 s/d 22.00 \nWeek End Jam 8.00 s/d 23.00"
+            android:textColor="#FFC107"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/judul_jambuka" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
